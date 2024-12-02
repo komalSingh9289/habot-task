@@ -2,7 +2,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import bgImage from "../assets/yt.jfif";
 import { useState } from "react";
 import youtube from "../assets/youtube.svg";
-
+import tick from "../assets/tick.svg";
 const SignupSection = () => {
   const places = [
     "Abu Dhabi",
@@ -66,7 +66,7 @@ const SignupSection = () => {
               )
             }
           >
-           <img src={youtube} className="absolute w-20 h-20" />
+            <img src={youtube} className="absolute w-20 h-20" />
           </div>
         </div>
 
@@ -100,33 +100,33 @@ const SignupSection = () => {
           <div className="text-sm">
             {activeTab === "Buyer" && (
               <ul className="space-y-4">
-                <li className="flex items-start text-xs sm:text-sm text-white">
-                  <span className="text-green-500 mr-3">✔</span>
-                  Post your requirements.
+                <li className="flex items-center  text-xs sm:text-sm text-white">
+                  <img src={tick} className="w-4 h-4"/>
+                  <p className="px-2">Post your requirements.</p>
                 </li>
-                <li className="flex items-start text-xs sm:text-sm text-white">
-                  <span className="text-green-500 mr-3">✔</span>
-                  Sit back for multiple suppliers to contact you.
+                <li className="flex items-center text-xs sm:text-sm text-white">
+                  <img src={tick} className="w-4 h-4"/>
+                  <p className="px-2">Sit back for multiple suppliers to contact you.</p>
                 </li>
-                <li className="flex items-start text-xs sm:text-sm text-white">
-                  <span className="text-green-500 mr-3">✔</span>
-                  Choose among the suppliers based on the ratings and reviews.
+                <li className="flex items-center text-xs sm:text-sm text-white">
+                  <img src={tick} className="w-4 h-4"/>
+                  <p className="px-2">Choose among the suppliers based on the<br/> ratings and reviews.</p>
                 </li>
               </ul>
             )}
             {activeTab === "Supplier" && (
               <ul className="space-y-4">
-                <li className="flex items-start text-xs sm:text-sm text-white">
-                  <span className="text-green-500 mr-3">✔</span>
-                  View posted requirements by buyers.
+                <li className="flex items-center text-xs sm:text-sm text-white">
+                  <img src={tick} className="w-4 h-4"/>
+                  <p className="px-2">View posted requirements by buyers.</p>
                 </li>
-                <li className="flex items-start text-xs sm:text-sm text-white">
-                  <span className="text-green-500 mr-3">✔</span>
-                  Submit your proposals to buyers.
+                <li className="flex items-center text-xs sm:text-sm text-white">
+                  <img src={tick} className="w-4 h-4"/>
+                  <p className="px-2">Submit your proposals to buyers.</p>
                 </li>
-                <li className="flex items-start text-xs sm:text-sm text-white">
-                  <span className="text-green-500 mr-3">✔</span>
-                  Build your profile with reviews and ratings.
+                <li className="flex items-center text-xs sm:text-sm text-white">
+                  <img src={tick} className="w-4 h-4"/>
+                  <p className="px-2">Build your profile with reviews and ratings.</p>
                 </li>
               </ul>
             )}
