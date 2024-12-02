@@ -49,7 +49,7 @@ const Navbar = () => {
             </button>
             {dropdownOpen && (
               <div
-                className="absolute z-50 mt-2  right-auto bg-white border text-xs border-gray-300 rounded shadow-md max-h-48 overflow-y-auto"
+                className="absolute z-50 mt-2  right-20 bg-white border text-xs border-gray-300 rounded shadow-md max-h-48 overflow-y-auto"
                 style={{ minWidth: "150px" }}
               >
                 <a
